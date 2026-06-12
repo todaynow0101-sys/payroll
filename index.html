@@ -86,10 +86,10 @@ body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:var(-
         <div class="cnum" id="fcNum"></div>
         <div class="ckr" id="fcKr"></div>
         <div class="cen" id="fcEn"></div>
-        <button class="fbtn" id="flipBtn">영어로 보기 👆</button>
+        <button class="fbtn" id="flipBtn">한국어로 보기 👆</button>
         <div class="nrow" id="fcNav" style="display:none">
-          <button class="nbtn ng" id="btnWrong">❌ 몰랐어</button>
-          <button class="nbtn ok" id="btnRight">✅ 알았어</button>
+          <button class="nbtn ng" id="btnWrong">← 이전</button>
+          <button class="nbtn ok" id="btnRight">다음 →</button>
         </div>
       </div>
     </div>
@@ -156,8 +156,8 @@ function showFC(){
   var c=FC[fi%FC.length];
   document.getElementById('fcBadge').textContent=c.category;
   document.getElementById('fcNum').textContent=(fi%FC.length+1)+' / '+FC.length;
-  document.getElementById('fcKr').textContent=c.kr;
-  document.getElementById('fcEn').textContent=c.en;
+  document.getElementById('fcKr').textContent=c.en;
+  document.getElementById('fcEn').textContent=c.kr;
   document.getElementById('fcEn').className='cen';
   document.getElementById('flipBtn').style.display='block';
   document.getElementById('fcNav').style.display='none';
