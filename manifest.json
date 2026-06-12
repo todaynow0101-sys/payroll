@@ -2,7 +2,7 @@
   "name": "페이롤 영어",
   "short_name": "페이롤",
   "description": "급여 실무 영어 완전 정복",
-  "start_url": "/payroll-english/",
+"start_url": "/payroll/"
   "display": "standalone",
   "background_color": "#ecfdf5",
   "theme_color": "#059669",
